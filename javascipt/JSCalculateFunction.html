@@ -1,0 +1,44 @@
+<!-- 
+							javascript的运算函数
+对象		方法				格式					作用
+math 		.pow 				.pow(number1,number2)   	计算num1的num2次幂的结果.
+		.round 			.round(number/var) 		计算该数四舍五入的结果.
+		.ceil 				.ceil(number/var)			计算该数值向上取整的结果 
+		.floor 				.floor(number/var)			计算该数值向下取整的结果.
+		.random 			.random() 				随机生成一个大于0小于1的数值.
+		.max 				.max(var1,var2,var3) 		比较几个数的大小，计算出最大的数
+		.min 				.min(var1,var2,var3) 		比较几个数的大小，计算出最小的数
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于JS的运算函数</title>
+	<script type="text/javascript">
+			//  var  a = Math.pow(2,5);
+			//  console.log(a);				//第一种方法：声明一个变量来装这个函数的结果，再在控制台输出
+			// console.log(Math.pow(3,3));		//第二种方法：直接在控制台输出该函数的结果.
+			// var b = 3.657;
+			// var c = Math.round(b);
+			// console.log(c);
+			// var  d =Math.ceil(5.001);		//向上取整(天花板函数)：表示如果该数有小数位并不为0，那么整数位加1
+			// console.log(d);
+			// var e = Math.floor(3.112);		//向下取整(地板函数)：表示如有该数有小数部分并不为0，那么保留整数部分。
+			// console.log(e);	
+
+			var  a = Math.random();
+			console.log(a);
+
+			var a = 1 ;
+			var b = 2 ;
+			var c = 3 ;
+			var d = Math.max(a,b,c);
+			var e = Math.min(a,b,c);
+			console.log(d);
+			console.log(e);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

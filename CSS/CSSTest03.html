@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于复合选择器</title>
+	<style>
+	/*标签指定选择器(不常用)*/
+	p.size {
+		font-size:30px;
+	}
+
+
+	/*后代选择器(适合嵌套型的多同类标签)*/
+	.color li {
+		color:red;
+	}
+
+
+	/*并集选择器(适合多个标签需要设置的样式为相同时)*/
+	h1, h2, span {
+			background-color: green;
+	}
+
+	/*子代选择器(适合为一个标签的子代设置样式，而子代之后的同样标签不会受到影响)*/
+	h3>strong {
+		color:yellow;
+	}
+	/*属性选择器(标签内有属性的时候，可以直接把标签和属性拿来一起设置样式，[]内的属性必须在标签里存在，缺一不可)*/
+	h4[class]{
+		color:greenyellow;
+	}
+	h4[id][class]{
+		font-size:50px;
+	}
+	</style>
+</head>
+<body>
+
+
+	<h1>哈哈哈哈哈哈哈</h1>
+	<h2>嘻嘻嘻嘻嘻嘻嘻</h2>
+
+
+	<h3>都是我儿子！
+	<p> 你大爷！	<strong>你孙子！</strong> </p>
+	<strong>你儿子！</strong>
+	</h3>
+	<h4 id="nice" class="good">楼上这家子还真乱啊！</h4>
+
+
+	<div class="color">
+		<ul>
+			<li>AAAAAAAAAAA</li>
+			<li>BBBBBBBBBBB</li>
+			<li>CCCCCCCCCCC</li>
+
+		</ul>
+
+				<p class="size">标签指定~~</p>
+	</div>
+
+	<div>
+			<ul>
+			<li>DDDDDDDDDDD</li>
+			<li>EEEEEEEEEEE</li>
+			<li>FFFFFFFFFFF</li>
+			</ul>	
+
+
+	</div>
+	<span>span标签前来打个酱油</span>
+	
+</body>
+</html>

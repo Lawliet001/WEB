@@ -1,0 +1,81 @@
+<!--
+http ： 超文本传输协议
+URL（Uniform Resoure Locator）：统一资源定位器
+URL地址格式排列为：scheme：//host：port/path
+Internet资源类型（scheme）：指出WWW客户程序用来操作的工具，http：//”表示WWW服务器，“ftp：//”表示FTP服务器，“gopher：//”表示Gopher服务器.
+服务器地址（host）：指出WWW页所在的服务器域名
+端口（port）：需给出相应的服务器提供端口号,一般不写
+路径（path）：指明服务器上某资源的位置，通常有目录/子目录/文件名这样结构组成。 
+a标签中的邮箱地址: mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
+<form   method="传送方式(get/post)"   action="服务器文件">
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>总结复习HTML</title>
+</head>
+<body background="imgs/08.png"> 				<!-- 插入背景图片 -->
+			<p>段落文本标签，是块级标签</p>
+			<span>文本标签，是行内标签</span>
+			<div>段落标签，块级标签</div>
+			<img src="导入图片的相对路径" alt="没找到图片时显示的内容">
+			<a href="超链接导入的地址">超链接标签</a>
+			<h1>标题标签，块级标签</h1>
+			<h2>标题标签，块级标签</h2>
+			<h3>标题标签，块级标签</h3>
+			<h4>标题标签，块级标签</h4>
+			<h5>标题标签，块级标签</h5>
+			<h6>标题标签，块级标签</h6>
+			<br> <!--  换行 -->
+			<hr><!-- 添加一条横线 -->
+			<del>一条删除线</del>
+			
+			<ul>
+				不规则列表	
+				<li>列表项</li>
+				<li>列表项</li>
+				<li>列表项</li>
+			</ul>
+		
+			<ol>
+				规则列表
+				<li>1</li>
+			</ol>
+			<dl>
+			<dt>自定义标签 标题</dt>
+			<dd>自定义标签 内容</dd>
+			</dl>
+			<form action="#指向当前页面" method="post">
+			文本框 	<input type="text">	
+			密码	<input type="password">
+			单选	<label >A<input type="radio" name="same">B<input type="radio" name="same"></label>
+			多选	A<input type="checkbox"> B<input type="checkbox"> C<input type="checkbox">  D<input type="checkbox">
+			列表	<select name="" id="">
+					<option value="1">A</option>
+					<option value="2">B</option>
+					<option value="3">C</option>
+					</select>
+			文本域	<textarea name="" id="" cols="30" rows="10"></textarea>
+					<input type="submit" value="提交按钮">
+					<input type="button" value="普通按钮">
+					<input type="reset" value="清空全部按钮">
+			</form>
+			<fieldset>
+			<legend>创建一个分组列表，这是组名</legend>
+			<table border="1">
+				<th>表格的标题</th>
+				<tbody>
+						<tr>	
+							<td>第一行第一列</td>	<td>第一行第二列</td>
+						</tr>
+						
+				</tbody>			
+			</table>
+			</fieldset>
+			<a href="mailto:361500695@qq.com?subject='主题'&body='内容'">邮寄给我</a>		<!-- 邮箱的超链接 -->
+			<b>加粗标签,内联标签</b>
+			<i>倾斜标签,内联标签</i>
+
+</body>
+</html>

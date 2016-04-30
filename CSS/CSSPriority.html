@@ -1,0 +1,39 @@
+   <!-- 
+	层叠性:对同一个类设置多个颜色，最后网页显示的是最后一个样式的颜色,但是在后面加入!important可将优先级提高到最高 
+	继承:设置父级标签的样式后，子级标签会去继承这种样式，但是只能继承指定的几种类型
+	优先级:行内样式>id选择器>类选择器>标签选择器>通配符选择器>继承样式>标签默认样式 
+    -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于层叠性、继承、优先级</title>
+	<style>
+		.box{
+			height: 200px;
+			width: 200px;
+			background-color:red;
+		}
+		.box{
+			background-color: green;
+		}
+		.font{
+			font-size:45px;
+		}
+		p{
+			color:pink!important;
+		}
+		p{
+			color:yellow;
+		}
+	</style>
+</head>
+<body class="font">
+			<div class="box">
+						
+			</div>
+
+			<p>我是一个段落标签！！！</p>
+	
+</body>
+</html>

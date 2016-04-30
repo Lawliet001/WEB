@@ -1,0 +1,43 @@
+<!-- 
+用font合写来表示行高的几种方法：
+1.font:Mpx/N  	即数值为M的像素行高是M的N倍
+2.font:Mpx/N%	即数值为M的像素行高是M的百分之N.
+3.font:Mpx/Nem	即数值为M的像素行高是M的Nem大小.
+4.font:Mpx/Npx	即数值为M的像素行高是N像素. 
+% em px  		都是单位.
+注意：若父标签设置过了font-size，那么设置子标签的行高，子标签中的font-size不会被继承，行高是按当前子标签的font-size进行计算的
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于行高的练习</title>
+	<style>
+			div.wrap{
+				height: 200px;
+				/*line-height:200px;*/
+				background-color: green;
+				font:50px/2 "微软雅黑";
+				line-height:200px;
+				}
+			.demo{
+				background-color: #2F2F4F;
+				font:20px "宋体";
+				}
+			.demo p{
+				background-color: #BC1717;
+				font:30px/2.5 "微软雅黑";
+				}
+	</style>
+</head>
+<body>
+			<div class="wrap">
+				行高是如何进行设置的
+			</div> 
+
+			<div class="demo">
+				AAAAAAAAA	
+				<p>哈哈哈哈哈嘻嘻嘻嘻呵呵呵呵</p>
+			</div>
+</body>
+</html>

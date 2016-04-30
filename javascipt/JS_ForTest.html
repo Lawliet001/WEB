@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于FOR循环的练习</title>
+	<script type="text/javascript">
+		//求13的阶乘：1*2*3*4*5*6*7*8*9*10*11*12*13
+			// var  product =  1;
+			// for(var i = 2;i<=13;i++){
+			// 	product*=i;
+			// }
+			// console.log(product);
+			// console.log(1*2*3*4*5*6*7*8*9*10*11*12*13);
+		//计算100到999的水仙花数:百位数上的数的立方+十位数上的数的立方+个位数上数的立方=自己
+		//usd =  unit's digit(个位上的数)   tsd = ten's digit(十位上的数)   hsd =  hundred's digit(百位上的数) 
+		// for(var i =100;i<=999;i++){
+		// 	var  usd  = Math.pow(i%10,3);
+		// 	var  tsd  =  Math.pow(Math.floor(i%100/10),3);
+		// 	var  hsd  =  Math.pow(Math.floor(i/100),3);
+		// 	var  New  =  usd + tsd + hsd ;
+		// 	if(New==i){
+		// 		console.log(i);
+		// 	}
+		// }	
+		// 求出所有2-100的质数: 大于1的整数,因为最小的质数是2，并只能被1和自己整除的数
+		//原理：让2~100的每一个数与2到自己的前一位数既(2~n-1)个数依次进行相除,因为任何数除以1和本身都能除尽
+		//所以如果在2~n-1个中有能除尽(模=0)的数就说明这个数除了1和他本身以外有其他的约数，说明这个数就不是质数.
+		//方法：那么如果一个数有其他的约数，那这个这个约数肯定不等于他本身
+		//所以对2~100的数从2~99个数开始遍历，能被除尽就判断两个数是否相等，如果不相等就说明这个数有其他的约数.既这个数就不是质数
+		//换而言之：在循环过程中唯一只有当M自增到跟N是同个数时才能除尽，就说明是质数
+			for(var n =2;n<=100;n++){
+				for(var m  = 2;m<=n-1; m++){
+				//当n%m！=0; 会跳到m++然后判断m<=n-1 ；而不是跳到if（n==m）,break以后才跳到if判断
+					if(n%m==0){
+						break;  
+
+						}
+					}
+					if(n==m){
+					console.log(n);
+				}
+
+			}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

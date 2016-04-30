@@ -1,0 +1,29 @@
+<!-- Ternary Operator  				三元运算符
+格式							原理
+var1 >/<  var2  ?    方法一():方法二();		变量1和变量2进行一个判断  如果是正确的那么执行方法1，否则执行方法2.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于三元运算符</title>
+	<script type="text/javascript">
+		//连个数进行比较
+		// var  a = 5;
+		// var  b = 10;
+		// a > b ? alert(a):console.log(a);
+		//三个数进行比较  思路:先对前两个数ab进行比较，
+		//然后声明一个变量comparel来储存a和b比较的结果，再把这个结果跟第三个数比较
+		var  a = 45;
+		var  b = 20;
+		var  c = 30;
+		var compare;
+		(compare=a>b? a:b)>c?  alert(compare):alert(c);
+		
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

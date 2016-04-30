@@ -1,0 +1,39 @@
+	<!-- 
+				LoVe  HAte
+	:link					未被访问过的链接
+	:visited				已被访问过的链接
+	:hover					鼠标悬停后链接的元素
+	:active					鼠标点击并按住时候的元素
+	:focus					键盘输入焦点时候的元素 
+	-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于伪类</title>
+	<style>
+	a:link{
+		color:red;
+	}
+	a:visited{
+		color:purple;
+	}
+	a:hover{
+		background-color: blue;
+	}
+	a:active{
+		font-size:20px;
+	}
+	.text1:focus{
+		background-color: silver;
+	}
+</style>
+</head>
+<body>
+		<a href="http://www.acfun.tv">A站</a>
+		<a href="http://www.baidu.com">度娘</a>
+		<a href="http://www.taobao.com">马云</a>
+		<a href="http://www.bilibili.com">某同性交友网站</a>
+		<input type="text" class="text1">
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+盒模型：
+边框:					border
+内边距					padding
+外边距					margin
+border的分写			border-top/bottom/left/right-color/style/width
+border的合写    		border :边框宽度 边框样式 边框颜色; \
+padding的合写			padding：上 右 下 左
+margin合写				margin: 上 右 下 左
+关于居中				margin:npx auto(针对块级元素,元素需要有宽度)     text-align:center（针对行内元素）
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于盒模型</title>
+		<style>
+					.box{
+						background-color: pink;
+						width: 250px;
+						height: 200px;
+						/*border:10px solid #00009c;*/
+						border-top-width:10px;
+						border-top-color:#00009c;
+						border-top-style:solid;
+						border:0 none;									/*去掉默认的边框*/
+						padding:20px 15px 10px 5px;
+						margin:15px 12px  9px 6px;
+					}
+		</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+</body>
+</html>

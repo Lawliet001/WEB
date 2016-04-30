@@ -1,0 +1,59 @@
+<!-- 要求：
+p标签背景色绿色
+h1字体颜色红色
+span字体大小为25PX -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于CSS的设置练习</title>
+	<style>
+
+		/*标签的选择器
+		p{
+			background-color: green;
+		}
+		h1{
+			font-color:red;
+		}
+		span{
+			font-size:25px;
+		}*/
+
+
+		/*通配符选择器：‘*’表示所有的标签
+		*{
+			font-size:33px;			属性：属性值
+		}*/
+
+	/*	id选择器:#开头给同样的标签设定ID，每个样式对应其ID的标签
+		#p1{
+			font-size:50px;
+		}
+		#p2{
+			font-size:10px;
+		}*/
+
+
+		/*类选择器（推荐使用）：不同的标签可以设置同一个类，且每个标签能有多种类，用空格隔开*/
+		.web{
+			color:green;
+		}
+		.demo{
+			font-size:50px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<p id="p1">我是一个文本标签!</p>			<!-- 注意：id的值，最好要有意义，不能用单个数字和其他标签名字 -->
+	<p id="p2" class="web">我也是一个文本~~</p>
+
+	<h1>我是一个标题标签！</h1>
+
+	<span class="web demo">我是一个文本节标签!</span>
+</body>
+</html>

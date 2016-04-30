@@ -1,0 +1,37 @@
+<!--
+ ==				等等于  	仅仅判断内容是否相等，注：boolean类型较特殊可以看下面的注释. 
+ ===			等等等于	既判断内容是否相等，又判断数据类型是否相同.NaN较特殊，自己不等于自己.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于比较运算符</title>
+	<script type="text/javascript">
+					// var a = 1;
+					// var b = "1";
+					// var c = a==b;
+					// console.log(c);
+					  // var a =true;	boolean的本质是在内存上将ture转换成1，将false转换成0
+					  // var b = "true";
+					  // var c = a==b;	所以1不等于字符串的true ， 所以C的结果为FALSE
+					  // console.log(c);
+
+					  // var d = false;
+					  // var e = 0;
+					  // var f = d==e;
+					  // console.log(f);
+					  // var a = 1;
+					  // var b = "1";
+					  // var c = a===b;
+					  // console.log(c);
+					  	var a = NaN;
+					  	var b = NaN;
+					  	var c = a==b;
+					  	console.log(c);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

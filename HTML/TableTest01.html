@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于Table的二三事</title>
+</head>
+<body>
+	<table border="1">				  													<!-- table标签：制作表格 -->
+		<thead>																			<!-- thead标签：头部表格 -->
+			<tr>																		<!-- tr标签：表格的一行 -->
+				<th>列表1</th><th>列表2</th><th>列表3</th><th>列表4</th><th>列表5</th>	<!-- 																									th标签：头部表格一行中的内容 -->
+			</tr>
+
+		</thead>
+		<tbody>																			<!-- tbody标签：身体表格的内容 -->
+		<tr>
+			<td rowspan="2">游戏名称</td><td>WOW</td><td>LOL</td><td>DS</td><td>CS</td>	<!-- td标签：单元格的内容 -->
+		</tr>			<!-- rowspan="n':合并行命令，n为一个自然数，表示合并n行. -->
+
+		<tr>
+			<!-- <td>游戏类型</td> --><td>MMORPG</td><td>塔防类</td><!-- <td>生存类</td> --><td colspan="2">第一人称FPS</td>
+							<!-- colspan="n": 合并列命令，n为一个自然数，表示合并n列 -->
+
+		</tr>
+		</tbody>	
+		
+
+	</table>
+</body>
+</html>

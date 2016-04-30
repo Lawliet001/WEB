@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于CSS书写的形式</title>
+	<style type="text/css">												/*	css的嵌入样式*/
+		@import url(CSS/b.css);															
+		ul{
+			color:green;
+			background-color:red; 
+		}
+	</style>
+	<link rel="stylesheet" href="CSS/main.css">	 <!-- CSS的外联样式：rel默认为样式表，href的值为该css文件的相对路径 -->
+</head>
+<body>
+		<h1 style="color:blue;font-size:25px;">能够自动变形的文字</h1>		<!-- css的行内样式 -->
+<p>
+嘎嘎嘎嘎嘎嘎哈哈哈哈哈
+</p>
+										<!-- ul>(li>a[href=""])*n  表示列表下创建N个嵌套了A标签的列表项  -->
+<ul>
+	<li><a href="#">AAAAAAA</a></li>
+	<li><a href="#">BBBBBBB</a></li>
+	<li><a href="#">CCCCCCC</a></li>
+
+</ul>
+<br>
+<h2>OOOOOXXXXXX</h2>
+<h3>哈哈哈哈哈哈哈哈哈</h3>
+
+</body>
+</html>

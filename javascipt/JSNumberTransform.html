@@ -1,0 +1,77 @@
+<!--
+										强制转换
+							string		=================>		number
+1. Number(字符串/boolean);		将string类型的数据转换成number类型，注意：当输入的数据不能转换时，输出的值为NaN 。
+								如果输入的数据有小数，那么会保留小数。 如果输入的是空字符，那么输出值为0.
+2. parseInt(); 					输入带有小数点的数据时，会向下取整。如果数据中有数字和字母，解析时遇到第一个字母时就停止								输入空字符时，输出的值为NaN.	
+3. parseFloat();				转换小数时，保留小数.
+							number    =====================>	string
+1.String();						将number类型的数据转换成string类型
+2.var.toString();				在封装类中调用该变量对象的方法来进行转换。		
+								Boolean   转换
+1. Boolean();					将数据转换成Boolean类型，特别注意:0,false,"",NaN,																		undefined会被转换成false，其他的会被转换称呼true.
+
+										隐式转换
+								string	=================>		number									
+1.基本运算符: +,-,*,/,%对string类型的数字通过基本运算的方式能将其转换成number类型。最简单的有:  +a, a-0, a*1, a/1, a%1	
+								number    =====================>	string
+1.在number后+”一个字符串“，+号变成了连接运算符。
+								Boolean   转换		
+1.给变量加上一！，代表取反。																
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于数据类型转换</title>
+	<script type="text/javascript">
+				// var a = prompt("请输入一个数字");
+				// 	a = Number(a);			大小写切记！！！！！
+				// 	a++;
+				// alert("您输入的数字加一以后是："+a);
+
+					// var a = prompt("输入一个数字");
+					//  	a = parseInt(a);
+					//  	console.log(a);
+					//  	console.log(typeof a);
+					// var a = "123.987654321";
+					// a = parseFloat(a);
+					// console.log(a);
+					// var  a = 123;
+					//  a = String(a);
+					//  console.log(a);
+					//  console.log(typeof a );
+
+					//  var b = true;
+					//  	 b = b.toString();
+					//  	 console.log(b);
+					//  	 console.log(typeof b);
+					 // var  c = NaN;
+					 // 	  c =Boolean(c);
+					 // 	  console.log(c);
+					 // 	  console.log(typeof c);
+					 	// var a = "15";
+					 	// 	a = a*2;
+					 	// 	console.log(a);
+					 	// 	console.log(typeof a);
+					 	// var b = "31";
+					 	// 	b = b%3;
+					 	// 	console.log(b);
+					 	// 	console.log(typeof b);
+					 	var  a = 123;
+					 		 a = 123+"";
+					 		 console.log(a);
+					 		 console.log(typeof a );
+					 	var  b = 123;
+					 		 b = !!b ;
+					 		 console.log(b);
+					 		 console.log(typeof b);
+					 	// var a = Math.abs(~2016);
+					 	// console.log(a);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

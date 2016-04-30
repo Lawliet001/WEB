@@ -1,0 +1,63 @@
+<!-- 
+switch 语句的结构：
+switch(var){
+	case var=value1:
+	方法1;
+	break;
+	case var=value2:
+	方法2;
+	break;
+	case var=value3:
+	方法3;
+	break;
+	.
+	.
+	.
+	.
+	default(相当于是else):
+	方法;
+	break;
+}
+	跳出语句
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于Switch case</title>
+	<script type="text/javascript">
+		var a = prompt("请输入数字，告诉您对应的星期");
+		switch (a){
+			 case "1":   		//注意点:这里的string的“1”不能写成number的1，因为prompt方法会自动将number转成string
+			 				// case的值必须等等等于变量a的值，数据类型也要一样.
+			alert("您输入的是星期一");
+			break;
+			case "2":
+			alert("您输入的是星期二");
+			break;
+			case "3":
+			alert("您输入的是星期三");
+			break;
+			case "4":
+			alert("您输入的是星期四");
+			break;
+			case "5":
+			alert("您输入的是星期五");
+			break;
+			case "6":
+			alert("您输入的是星期六");
+			break;
+			case "7":
+			alert("您输入的是星期天");
+			break;
+			default:
+			alert("您的输入有误");
+			break;
+		}
+		alert("programing is over");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

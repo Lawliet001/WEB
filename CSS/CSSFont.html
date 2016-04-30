@@ -1,0 +1,59 @@
+<!-- 
+字体样式设置：
+1.font-family：设置何种字体，要注意中文字体和多个英语单词时要加双引号，个别字体浏览器不兼容，以及字体具有继承的特性.
+2.serif与sans-serif: 衬线体与非衬线体，即西方英文字母是否有笔韵，效果如下面的样式，注意：一般这种字体系列要放到样式最后，不然会覆盖前面的样式！
+3.font-weight:设置字体粗细，normal、bold(粗)、bolder（更粗）、light（细）、lighter（更细）、100-900（整数倍）,有继承性。
+4.font-style：设置字体风格,italic让字体变成斜体字， oblique让字体倾斜显示。
+5.font样式的合写顺序：有无倾斜 字体粗细 字体大小 字体样式 (前两个属性可以省略)
+6.letter-spacing:字符间距
+7.word-spacing:单词间距，对中文无效，但中文可以通过在两个词语之间加入空格让系统认为是两个单词，从而设定词间距. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于CSS的字体样式</title>
+	<style>
+			p{
+				font-family:Lucida Console;
+				font-size:25px;
+		
+			}
+			span{
+				font-family:Lucida Console;
+			}
+			.font-family{
+				serif;
+			}
+			h2{
+				font-family:"宋体";
+				sans-serif;
+			}
+			.desc{
+				font-weight: bold;
+			}
+			#cu{
+				font-weight:bolder;
+				font-style:oblique;
+			}
+			.thin{
+				font-weight:lighter;
+				font-style:italic;
+			}
+			.textdemo{
+					font:oblique 500 20px "宋体";
+					letter-spacing:10px;
+					word-spacing:30px;
+	</style>
+</head>
+<body>
+	<p>来看一看我是什么字体吧！</p>
+	<span>那我呢，那我呢， 我是什么字体？</span>
+	<p class="font-family">ABCDEFGabcdefg</p>
+	<h2>abcd ABCD</h2>
+	<span class="desc">楼上的，你们话真多，问题是你们有我粗？</span>
+	<p id="cu">听说有人在比粗？那我也来凑个热闹</p>
+	<span class="thin">你们聊，我还有事先走了....</span>
+	<p class="textdemo">aaaaabbbbbvccccthat is good  哈哈 哈哈哈</p>
+</body>
+</html>

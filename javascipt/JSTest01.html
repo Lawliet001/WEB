@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js的运算练习</title>
+	<script type="text/javascript">
+			// //第一题
+			// var a = (123+45*78)/(34+543)-9*(324-34);
+			// console.log(a);	
+			// //第二题
+			// var cel = prompt("请输入摄氏度");
+			// var fah = 9/5*cel+32
+			// alert("对应的华氏度是"+fah);
+			// //第三题
+			// var a = Math.pow(((23+Math.pow(5,7))/45),2);
+			// console.log(a);
+			//第四题
+			// var a = prompt("请输入六边形的边长");
+			// var s = (3*Math.pow(3,1/2)/2)*Math.pow(a,2);
+			// console.log(s);
+			//第五题	如果今天是星期六,那么1000天后是星期几.两种办法：
+			var a = 1000%7;
+				a = a+6;
+				a = a-7;
+				console.log(a);
+			var b = (1000+6)%7;
+				console.log(b);	
+			//第七题  输入一个三位数，计算每个位上的数相加的和， 如134 结果为8.
+			var c = prompt("请输入一个数");
+			var bai =  Math.floor(c/100);
+			var shi = Math.floor(c%100/10);
+			var ge  = c%10;
+			var he =bai+shi+ge;
+			console.log(he);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--
+word-break					文本换行
+word-break:normal 			默认换行样式
+word-break:break-all		允许在单词内换行(即可以让一个单词分开在两行)
+word-break:keep-all 		只允许在连字符内换行(不能拆开一个单词) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于文本换行</title>
+	<style>
+			div{
+				background-color: lightseagreen;
+				height: 200px;
+				width: 200px;
+				word-break:keep-all;
+			}
+	</style>
+</head>
+<body>
+		<div>
+			It was very nice you agree with that right?
+		</div>
+</body>
+</html>

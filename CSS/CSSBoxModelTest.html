@@ -1,0 +1,29 @@
+<!-- 
+盒模型的特点：
+当内容区域的宽高为0像素时，4个边框会变成统一中心为顶点的四个三角形. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于盒模型的练习</title>
+	<style>
+			*{
+				padding:0;
+				margin:0;
+			}
+			.box{
+					width: 0px;
+					height: 0px;
+					border:100px solid;
+					border-top-color:red;
+					border-left-color:green;
+					border-right-color:yellow;
+					border-bottom-color:blue;
+			}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

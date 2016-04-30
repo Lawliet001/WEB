@@ -1,0 +1,7 @@
+
+@import url(a.css);			/*@import可以放在其它文件下，再外联第三个文件的样式*/
+p{
+	color:green;
+	font-size:35px;
+	background-color:silver;
+}

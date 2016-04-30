@@ -1,0 +1,63 @@
+<!-- 
+盒模型:	圣诞树模型
+原理：
+利用了盒模型内容区域为0像素时，边框变成三角形的原理，
+选择了合适方向的三角形，利用float与margin来调整两个三角形的位置使其拼接。 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型的练习（圣诞树模型）</title>
+	<style>
+			*{
+				padding:0;
+				margin:0 ;
+			}
+			.box{	
+					width: 0px;
+					height: 0px;	
+					border:50px solid white;
+					/*border-top-color:pink;*/
+					border-bottom-color:white;
+					float:left;
+					margin-left:0px;
+			}
+			.box1{
+					width: 0px;
+					height: 0px;	
+					border:100px solid white;
+					border-bottom-color:green;
+					float:left;
+					margin-left:10px;
+			}
+		.box2{
+					width: 0px;
+					height: 0px;	
+					border:200px solid white;
+					border-bottom-color:green;
+					/*float:left;*/
+					margin-left:15px;
+			}
+			
+			.box3{
+					width: 50px;
+					height: 100px;
+					background-color: #5C4033;
+					margin-left:180px;
+					
+
+			}
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+
+	</div>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>

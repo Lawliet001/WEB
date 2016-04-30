@@ -1,0 +1,46 @@
+<!--
+white-space  				处理空白符的样式（只对空白符有效)
+white-space:normal  		按照正常文本换行，到了边框边界就自动换下一行
+white-space:nowrap  		即使超过边框的边界也不会换行
+white-space:pre	 			显示与源代码相同的格式
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于文本空白的样式</title>
+	<style>
+			div{
+				background-color: green;
+				width: 200px;
+				height: 200px;
+			}
+			.desc1{
+					white-space:normal;
+			}
+			.desc2{
+					white-space:nowrap;
+			}
+			.desc3{
+					white-space:pre;
+			}
+	</style>
+</head>
+<body>
+		<div class="desc1">
+		dog  dog   dog   dog   dog   dog   dog   dog   dog   dog  dog  dog
+		</div>
+
+		<div class="desc2">
+		cat cat catcat cat catcat cat catcat cat catcat cat catcat cat catcat cat cat
+		</div>
+
+		<div class="desc3">
+		bird birdbird birdbird bird bird
+		bird birdbird bird
+		bird birdbird 
+		bird bird
+		bird 		
+		</div>	
+</body>
+</html>

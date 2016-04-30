@@ -1,0 +1,34 @@
+<!--
+ ******************** Array**************************
+定义
+数组是用来储存一大串数据的容器，通过下标来找到数组中数据的地址.
+格式
+var  =  new  Array();
+a[num]= number/string ;
+特点
+JS的数组与JAVA的数组有点不同，JS的数组一旦定义它的容量是无线大的，而JAVA有限 
+属性
+.length  获取一个数组的长度
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于JS的数组</title>
+	<script type="text/javascript">
+		var a  =  new  Array();
+		a [0] =  20;
+		a [1] = 30;
+		a [2] = 40;
+		a[3] = 50;
+		alert(a[2]);
+		//数组的遍历
+		for(var  i =0 ; i<a.length;i++){
+			 console.log(a[i]);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

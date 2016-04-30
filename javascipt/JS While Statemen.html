@@ -1,0 +1,120 @@
+<!--
+ *************************while 结构*************************
+while(条件){
+	方法
+	var的变化
+	break;     终止循环
+	continue;     立即结束本次循环,开始下次循环.,但是不会跳出循环.
+}
+   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于while语句</title>
+	<script type="text/javascript">
+		 // var  a = 1;
+		 // while(a<=100){
+		 // 			console.log("哈哈哈哈哈"+a);
+		 // 			a++;
+		 // }
+		 // console.log("over");
+		 //计算1-100的和
+		 	// var  a = 1;
+		 	// var Sum=0;
+		 	// while(a<=100){
+		 	// 		Sum+=a;
+		 	// 		a++;
+		 	// }
+		 	// console.log(Sum);
+		 //老师问大家都听懂了吗？大家回答yes那么就放学，如果大家回答no，那就继续讲，但是最多讲3次，如果还听不懂那么也放学.
+		 		// var    answer =  prompt("大家今天的课都听懂了吗");
+		 		// var  time  = 1  ;
+		 		//  while(answer=="no"&& time<3){
+		 		//  		alert("那老师再给你们讲一次");
+		 		//  		answer = prompt("那么现在听懂了吗？");
+		 		//  		time++;
+		 		//  }
+		 		//  		alert("放学咯！");
+		 //小明的银行卡密码是123456他在银行ATM机窗口输入密码，如果输对了，就可以取钱，输错了就一直提示错误.
+		 // var   Password = prompt("请输入您的密码");
+		 // while(Password != "123456"){
+		 // 			alert("抱歉，您的密码输入有误，请重新输入");
+		 // 			Password = prompt("请输入您的密码");
+		 // }
+			// 		alert("密码正确！进入界面");
+
+		 //小明的银行卡密码是123456他在银行ATM机窗口输入密码，如果输对了，就可以取钱，输错3次就吞卡.
+ 				//  var   password = prompt("请输入您的密码");
+				 // var   time = 1;
+ 				// if (password=="123456"){
+ 				// 	alert("密码验证成功");
+ 				// }
+ 				// else{
+ 				// 	while(time<3&&password != "123456"){
+ 				// 		alert("抱歉，您的密码输入有误，请重新输入");
+ 				// 		Password = prompt("请输入您的密码");
+ 				// 		if(Password=="123456"){
+ 				// 			alert("密码验证成功，进入个人账户界面!");
+ 				// 			break;
+ 				// 		}
+ 				// 		else{
+ 				// 			time++;
+ 				// 		}
+ 				// 		if(time>2){
+ 				// 			alert("抱歉!由于您多次密码输入错误,现暂时保存您的银行卡.");
+ 				// 		}
+ 				// 	}
+ 				// }
+ 				//计算1到100的并除掉所有个位数上是9的数的和
+ 				// var   num =  1;
+ 				// var Sum = 0;
+ 				// while(num<=100){
+ 					
+ 				// 	if (num %10 == 9) {
+ 				// 		num++;
+ 				// 	}
+ 				// 	else{
+ 				// 		Sum += num;
+ 				// 		num++;
+ 				// 	}
+ 				// }
+ 				// console.log(Sum);
+ 				//计算1到1000并除掉所有个位数上是5的数的和
+ 				// var num = 1;
+ 				// var  Sum = 0;
+ 				// while(num<=1000){
+ 				// 	if (num%10==5) {
+ 						
+ 				// 		num++;
+ 				// 		continue;
+ 				// 	}
+ 				// 	else{
+ 				// 		Sum+=num;
+ 				// 		num++;
+ 				// 	}
+ 				// 	console.log("现在的和是"+Sum);
+ 				// }
+ 				// console.log(Sum);
+ 				//计算100到1000并除掉所有十位数上是5的数的和
+ 				var num = 1;
+ 				var  Sum = 0;
+ 				while(num<=1000){
+ 					if (Math.floor(num%100/10==5)) {
+ 						
+ 						num++;
+ 						continue;
+ 					}
+ 					else{
+ 						Sum+=num;
+ 						num++;
+ 					}
+ 					console.log("现在的和是"+Sum);
+ 				}
+ 				console.log(Sum);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

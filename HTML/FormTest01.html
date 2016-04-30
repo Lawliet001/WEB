@@ -1,0 +1,40 @@
+<!-- 
+form标签：表单
+input 标签：适用于text(文本内容)，pasword(密码)，选择框radio(单选按钮)，checboxx(方形选择按钮)，submit(提交按钮)，button(普通的按钮)，reset（清空表单内所有内容按钮）注：如果要让两个选项或多个选项只选一个，在每个选项的input中加入name=same  same代表同一个名称.
+select标签：列表	适用于下拉列表或者输入multiple：显示下拉内容的列表 option:选项 需要对选项进行编号.
+texarea标签：文本域	适用于备注等需要输入大量文本内容的区域。  其中，cols代表列数，rows代表行数。
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于Form的二三事</title>
+</head>
+<body>
+<form action="#">
+	用户名 			<input type="text"><br>
+	密码			<input type="password"><br>
+	性别			<label>男<input type="radio" name=same></label>	<label>女<input type="radio" name=same ></label><br>
+	才能			做菜<input type="checkbox">	唱歌<input type="checkbox" checked> 画画<input type="checkbox"><br>
+	下拉列表		<select name="" id="">							<!-- checked是input中表示默认选择为当前选项 -->
+					<option value="1">A</option>					<!-- value表示编号 -->
+					<option value="2"	selected="true">B</option>	<!-- selected="true"是select中表示默认选择为当前选项 -->
+					<option value="3">C</option>					<!-- label标签：被label包裹的ID会自动锁定焦点 -->
+					</select> <br>				
+	自动填充列表	<select name="" id=""	multiple>
+					<option value="1">a</option>
+					<option value="2">b</option>
+					<option value="3">c</option>
+					<option value="4">d</option>
+					</select> <br>
+	备注			<textarea name="" id="" cols="30" rows="10">
+		
+					</textarea><br>
+					<input type="submit" value="完成">				<!-- value是按钮里的文本 -->
+					<input type="button" value="普通按钮" class="btn">			
+					<input type="reset" value="重置">
+					
+</form>
+	
+</body>
+</html>

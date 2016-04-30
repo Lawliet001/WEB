@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于伪元素</title>
+	<style>
+	/*first-line:设置块级元素中第一行的样式*/
+	p:first-line{
+		color:red;
+	}
+	/*first-letter：设置块级元素中第一个字的样式*/
+	p:first-letter{
+		font-size:35px;
+	}
+
+	/*:before, :after 在元素内容前后插入新的内容,特有的量个属性content,display*/
+	.wrap:before ,.wrap:after{
+		content: "----------";
+		display: block;				/*display：blcok 让当前伪元素转成块级元素*/
+	}
+
+	</style>
+</head>
+<body>
+		<p>
+		伪元素是创造关于文档语言能够指定的文档树之外的抽象。例如文档语言不能提供访问元素内容第一字或者第一行的机制。伪元素允许设计师引用它们，否则这是难以办到的。伪元素还提供样式设计师给在源文档中不存在的内容分配样式（例如：:before和:after能够访问产生的内容）。
+		</p>
+		<div><hr></div>
+
+			<div class="wrap">我是一个DIV标签</div>		<!-- wrap：包裹 -->
+
+		<div><hr></div>
+
+</body>
+</html>

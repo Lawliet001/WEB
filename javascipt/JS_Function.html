@@ -1,0 +1,119 @@
+<!--
+ *****************************Function*****************************
+ 
+					结构
+function    name(形式参数1,形式参数2,形式参数3........../可以不写){
+	内容;
+	return 返回值;
+}
+	调用:  name(实际参数1，实际参数2,实际参数3........./可以不写);
+
+
+作用:用来封装各种功能的代码.
+
+注意:当函数中没有返回值的时候，调用该函数说返回的是undefined.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于JS的函数</title>
+	<script type="text/javascript">
+		// alert(getSum(1,2));
+		// function getSum(num1,num2){
+		// 	var Sum=num1+num2;
+		// 	return Sum;
+		// }
+		// alert(getSum(5,10));
+		// // alert(GETSUM(1,0));
+		// function getSum(num1,num2){
+		// 	var Sum= num1+num2+100;
+		// 	return Sum;
+		// }
+		// alert(getSum(5,10));
+		// function ret(){
+		// 	return 10;
+		// 	return  1;
+		// }
+		// alert(ret());
+		// function  Sum(num1,num2){
+		// 	return	num1 + num2 ;
+		// }
+		// alert(Sum(1));
+		// function calc(num1, num2){
+		// 	num1= num1 || 1;
+		// 	num2 =num2 ||2;
+		// 	return num1 + num2;
+		// }
+		// alert(calc());
+		// function  Sum(num1 , num2 ){
+		// 	num1 = num1===undefined?5:num1;
+		// 	num2=  num2===undefined?10:num2;
+		// 	return num1+num2;
+		// }
+		//alert(Sum());
+
+		// function  getSum(){
+
+		// 	var  paramNum =  arguments.length;
+		// 	var Sum= 0;
+		// 	for(var  i = 0; i <paramNum;i++){
+		// 			Sum+=arguments[i];
+		// 	}
+		// 	return Sum;
+		// }
+		// console.log(getSum(1,2,3,4,5,6,7,8,9,10));
+		// 	var  a =  1;
+		// function getMax(){
+		// 		var  paramNum =  arguments.length;
+		// 		var  max= 0;
+		// 		for(var i =0;i<paramNum-1;i++){
+		// 			if(max<arguments[i]){
+		// 			max= arguments[i];
+		// 			}
+		// 		}
+		// 		return max;
+		// }
+		// alert(getMax(15,30,100,45,60,99,132,1564,556));
+		// document.write();
+			// 	var  a  = 1 ;
+			// 	var  b = 2;
+			// 	var  z = 100;
+			// function Sum(a,b){
+				// console.log("a的值是"+a);
+				// console.log("b的值是"+b);
+				   // a = 3;
+				   // b = 4;
+				  // z = 55;
+				// console.log("现在a的值是"+a);
+				// console.log("现在b的值是"+b);
+				// return z ;
+			// }
+			// var a = 5;
+			// var b= 6;
+			// console.log(a);
+			// console.log(b);
+			// Sum(a,b);
+			// console.log(a);
+			// console.log(b);
+			// console.log(z);
+
+			// console.log(a,b);
+			// console.log(Sum(a,b));
+			// console.log(Sum(10,20));
+			// console.log(z);
+			var  a = 1;
+			function test(){
+				console.log("a在函数体内未赋值之前是"+a);
+				var a = 20;
+				console.log("a在函数体内赋值后是"+a);
+			}
+			console.log("函数体外a的值是"+a);
+			test();
+			console.log("调用函数以后a的值"+a);	
+
+</script></head>
+<body>
+	
+</body>
+</html>
